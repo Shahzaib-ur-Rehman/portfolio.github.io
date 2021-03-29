@@ -1,0 +1,46 @@
+<div class="row">
+                    <div class="col-12 mt-4 mb-5 text-center d-flex justify-content-center align-items-center" style="height: 350px;">
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#my-modal">
+                            ADD COMMENTS
+                          </button>
+                        <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="my-modal-title">ADD COMMENTS</h5>
+                                        <button class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form action="/addcomment" method="POST">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group" style="text-align: left;">
+                                                        <label for="name ">Name</label>
+                                                        <input id="name" class="form-control" type="text" name="Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group" style="text-align: left;">
+                                                        <label for="email" class="text-left">Email</label>
+                                                        <input id="email" class="form-control" type="email" name="email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12" style="text-align: left;">
+                                                    <label for="comments" style="text-align: left;">Comments</label>
+                                                    <textarea class="form-control" name="comments" id="comments" cols="30" rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <input type="submit" value="ADD" class="btn btn-success">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
